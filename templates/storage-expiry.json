@@ -1,0 +1,10 @@
+{
+  "_comment": "Storage (MyDrive) expiry emails sent by expire-shares.yml (MorphoCloudWorkflow): two warnings before unused storage is removed, and a notice after. Plain text; the consumer substitutes the placeholders. Placeholders: {{days_left}} {{kept_until}} {{idle_days}} {{portal_url}} {{contact_email}}.",
+  "warning_first_subject": "Your MorphoCloud storage will be removed in {{days_left}} days",
+  "warning_first_body": "Your MorphoCloud storage has not been used for a while and will be removed on {{kept_until}}.\n\nTo keep it, sign in to the portal and press \"Keep my storage\", or start an instance: {{portal_url}}\n\nIf you have questions, contact {{contact_email}}.",
+  "warning_last_subject": "Your MorphoCloud storage will be removed in {{days_left}} days",
+  "warning_last_body": "Your MorphoCloud storage will be removed on {{kept_until}}, together with every file in it.\n\nTo keep it, sign in to the portal and press \"Keep my storage\", or start an instance: {{portal_url}}\n\nIf you have questions, contact {{contact_email}}.",
+  "deleted_subject": "Your MorphoCloud storage was removed",
+  "deleted_body": "Your MorphoCloud storage was removed after {{idle_days}} days without use.\n\nYou can create new storage at any time from the portal: {{portal_url}}\n\nIf you have questions, contact {{contact_email}}.",
+  "contact_email": "portal@morphocloud.org"
+}
