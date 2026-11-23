@@ -25,6 +25,16 @@ REQUIRED_KEYS = {
         "credentials_body",
         "credentials_subject",
     ],
+    "templates/storage-expiry.json": [
+        # expire-shares.yml (MorphoCloudWorkflow): storage expiry warnings + notice
+        "contact_email",
+        "deleted_body",
+        "deleted_subject",
+        "warning_first_body",
+        "warning_first_subject",
+        "warning_last_body",
+        "warning_last_subject",
+    ],
     "templates/welcome.json": [
         # post-acceptance welcome sender (to be built; keys fixed by this template)
         "contact_email",
