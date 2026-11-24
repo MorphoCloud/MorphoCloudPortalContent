@@ -35,6 +35,26 @@ REQUIRED_KEYS = {
         "warning_last_body",
         "warning_last_subject",
     ],
+    "templates/storage-term.json": [
+        # expire-shares.yml and delete-long-shelved.yml (MorphoCloudWorkflow):
+        # the storage term's reminders, lock, deletion and decisions, the
+        # admins' reminder, and the long-shelved instance notice
+        "contact_email",
+        "admin_reminder_body",
+        "admin_reminder_subject",
+        "approved_body",
+        "approved_subject",
+        "declined_body",
+        "declined_subject",
+        "deleted_body",
+        "deleted_subject",
+        "locked_body",
+        "locked_subject",
+        "reminder_body",
+        "reminder_subject",
+        "shelved_deleted_body",
+        "shelved_deleted_subject",
+    ],
     "templates/welcome.json": [
         # post-acceptance welcome sender (to be built; keys fixed by this template)
         "contact_email",
