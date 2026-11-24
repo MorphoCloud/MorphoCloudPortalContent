@@ -2,7 +2,7 @@
 """Validate the runtime email/page templates.
 
 These JSON files are fetched at runtime (raw.githubusercontent.com) by the
-join app, the renewal-email workflow, and the course-intake Apps Script —
+join app, the MorphoCloud workflows, and the course-intake Apps Script —
 there is no deploy step, so a malformed file or a renamed key goes live in
 minutes and silently breaks production email sending. This script is the
 guard rail: it fails if a file doesn't parse, a required key is missing or
@@ -101,14 +101,6 @@ REQUIRED_KEYS = {
         "student_enrolled_subject",
         "student_invited_body",
         "student_invited_subject",
-    ],
-    "templates/renewal.json": [
-        # send-renewal-email.yml render step
-        "contact_email",
-        "final_notice_body",
-        "final_notice_subject",
-        "renewal_available_body",
-        "renewal_available_subject",
     ],
 }
 

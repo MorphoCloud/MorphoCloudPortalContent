@@ -11,7 +11,6 @@ so edits go live on the next send — no redeploy, no re-vendorize.
 |---|---|---|
 | `templates/intake.json` | `morphocloud-intake` (join app: verification email, pages) | next request (5-min cache) |
 | `templates/mc-course-intake.json` | `mc-course-intake.gs` (instructor/admin/student emails) | next send (5-min cache) |
-| `templates/renewal.json` | `send-renewal-email.yml` (renewal warning + final notice) | next cron send |
 | `templates/instance-credentials.json` | `send-email` composite action (individual credential email) | next `/create` or `/email` |
 
 ## Editing
